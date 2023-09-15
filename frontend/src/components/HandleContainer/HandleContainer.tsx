@@ -7,7 +7,7 @@ export const HandleContainer = (props: HandleContainerProps) => {
   let isActive = true;
   return (
     <>
-      <div className={`block px-3 py-2 rounded-md  bg-slate-600 text-black`}>
+      <div className={`block px-3 py-2 rounded-md text-black`}>
         <p>{props.userHandle}</p>
       </div>
     </>
