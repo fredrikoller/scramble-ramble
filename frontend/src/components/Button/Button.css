@@ -1,0 +1,11 @@
+.button {
+    background: yellow;
+    color: black;
+    width: 200px;
+    height: 75px;
+    font-size: 36px;
+    font-weight: 600;
+    font-style: italic;
+    margin: 5px;
+  }
+  

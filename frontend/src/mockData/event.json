@@ -1,0 +1,15 @@
+{
+  "event": {
+    "name": "Höst LAN",
+    "date": "2023-11-09",
+    "location": {
+      "name": "Bullaregården",
+      "lat": 58.78237936035365,
+      "long": 11.561597938893366
+    },
+    "participants": [
+      { "userHandle": "frittzinator" },
+      { "userHandle": "gravling138" }
+    ]
+  }
+}
