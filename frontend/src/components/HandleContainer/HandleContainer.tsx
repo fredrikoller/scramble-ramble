@@ -1,15 +1,16 @@
 import './HandleContainer.css';
 
 interface HandleContainerProps {
+  id: number;
   userHandle: string;
 }
 
-export const HandleContainer = (props: HandleContainerProps) => {
-  
+export const  HandleContainer = (props: HandleContainerProps) => {
+
   return (
     <>
-      <div className="">
-        <p>{props.userHandle}</p>
+      <div>
+        <p><span className='pic'>{props.id}</span> {props.userHandle}</p>
       </div>
     </>
   )

@@ -1,17 +1,18 @@
 .button {
-    background: yellow;
-    color: black;
-    width: 200px;
-    height: 75px;
-    font-size: 36px;
-    font-weight: 600;
-    font-style: italic;
-    margin: 5px;
-    border-style: none;
-  }
+  background: var(--yellow);
+  color: var(--dark-red);
+  width: 200px;
+  height: 75px;
+  font-size: 36px;
+  font-weight: 600;
+  font-style: italic;
+  margin: 5px;
+  border-style: none;
+}
 
 .button:hover {
-    background-color: blueviolet;
-    color: white;
+  background-color: var(--orange);
+  color: var(--blue);
+  transform: skew(2deg, 2deg);
+  text-decoration: none;
 }
-  
