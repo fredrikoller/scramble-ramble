@@ -1,3 +1,7 @@
+@font-face {
+  font-family: 'Melted Monster';
+  src: url('../../../public/Melted\ Monster.ttf') format('truetype');
+}
 .hero {
     display: block;
     background-color: var(--header-background-rgb);
@@ -7,16 +11,17 @@
     margin-right: auto;
     text-align: center;
   }
-  
+
   .hero-text-container {
     height: 5rem;
     width: 40rem;
     margin: auto;
     display: block;
   }
-  
+
   .hero-text {
     color: white;
     font-size: 56px;
     font-weight: 300;
+    font-family: 'Melted Monster';
   }
