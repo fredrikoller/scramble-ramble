@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Melted Monster';
+  src: url('./fonts/MeltedMonster.ttf') ;
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -15,9 +20,8 @@
 }
 
 body {
-  margin: 0;
   background-color: var(--blue);
-  color: var(--yellow);
+  color: var(--orange);
 }
 
 a {
@@ -35,7 +39,9 @@ a:visited {
 }
 
 .hero-header {
+  margin: 0;
+  text-align: center;
   font-size: 56px;
   font-weight: 300;
-  font-family: var(--font-monster);
+  font-family: 'Melted Monster';
 }
