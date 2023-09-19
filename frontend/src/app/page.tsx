@@ -60,7 +60,6 @@ export default function Home() {
     navigator.clipboard.writeText(copyString);
   }
 
-
   return (
     <main>
       <div className="player-form-wrapper">
