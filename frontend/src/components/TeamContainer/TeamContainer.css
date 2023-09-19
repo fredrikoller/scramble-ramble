@@ -5,8 +5,6 @@
 .container-item h1 {
   color: var(--yellow);
   font-family: 'Maiden';
-  /* font-style: italic; */
-  font-size: x-large;
+  font-size: 36px;
   text-decoration: underline;
-  ;
 }
