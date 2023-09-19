@@ -1,5 +1,5 @@
 import { Button } from "@/components/Button/Button";
 import { HandleContainer } from "@/components/HandleContainer/HandleContainer";
-import { Hero } from "@/components/Hero/Hero";
+import { TeamContainer } from "./TeamContainer/TeamContainer";
 
-export { Button, HandleContainer, Hero };
+export { Button, HandleContainer, TeamContainer };

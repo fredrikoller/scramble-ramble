@@ -3,8 +3,8 @@ import './Button.css';
 
 interface ButtonProps {
   text: string;
-  link: string;
-  onClick: () => void;
+  link?: string;
+  onClick?: () => void;
 }
 
 export const Button = (props: ButtonProps) => {
@@ -13,7 +13,10 @@ export const Button = (props: ButtonProps) => {
       className="button"
       onClick={props.onClick}
     >
-      <Link href={props.link}>{props.text}</Link>
+      {props.link !== undefined
+        ? <Link href={props.link}>{props.text}</Link>
+        : props.text}
+
     </button>
   );
 };

@@ -1,0 +1,8 @@
+p::first-letter {
+  text-transform: capitalize;
+  font-size: large;
+}
+
+.name-wrapper {
+
+}

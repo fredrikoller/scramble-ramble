@@ -1,17 +1,11 @@
-import React from "react";
-import localFont from "next/font/local";
-
-const monster = localFont({
-  src: "../../app/fonts/MeltedMonster.ttf",
-  variable: "--font-monster",
-});
+import './Header.css';
 
 export default function Header() {
   return (
-    <header className="">
-      <div className="">
-        <h1 className={`${monster.className} font-monster hero-header`}>
-          Scramble-o-rama
+    <header>
+      <div>
+        <h1 className={"hero-header"}>
+          Scramble
         </h1>
       </div>
     </header>

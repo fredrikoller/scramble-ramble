@@ -7,10 +7,15 @@
   src: url('./fonts/MeltedMonster.ttf') ;
 }
 
+@font-face {
+  font-family: 'Maiden';
+  src: url('./fonts/maiden.ttf')
+}
+
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --foreground-rgb: rgb(0, 0, 0);
+  --background-start-rgb: rgb(214, 219, 220);
+  --background-end-rgb: rgb(255, 255, 255);
   --header-background-rgb: rgb(30, 46, 71);
   --dark-red: #100406;
   --wine-red: #391018;
@@ -38,10 +43,23 @@ a:visited {
   color: inherit; /* You can use "inherit" to inherit the parent's color */
 }
 
-.hero-header {
-  margin: 0;
+main {
+  margin: auto;
   text-align: center;
-  font-size: 56px;
-  font-weight: 300;
-  font-family: 'Melted Monster';
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 10rem;
+}
+
+.players-container {
+  margin-left: 10rem;
+  margin-right: 10rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 7rem;
 }
