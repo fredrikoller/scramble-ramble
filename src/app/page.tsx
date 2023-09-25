@@ -64,9 +64,10 @@ export default function Home() {
     <main>
       <div className="player-form-wrapper">
         <div className="players-container">
-          <TeamContainer players={crowd} title="Crowd" />
           <TeamContainer players={teamOne} title="team one" />
           <TeamContainer players={teamTwo} title="team two" />
+
+          <TeamContainer players={crowd} title="Crowd" />
         </div>
         <div className="button-container">
           <Button onClick={generate} text="Generate" />
