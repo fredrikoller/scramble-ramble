@@ -7,9 +7,6 @@
       "lat": 58.78237936035365,
       "long": 11.561597938893366
     },
-    "participants": [
-      { "userHandle": "frittzinator" },
-      { "userHandle": "gravling138" }
-    ]
+    "participants": ["frittzinator", "gravling138"]
   }
 }

@@ -24,6 +24,14 @@ export default function Home() {
   const [teamTwo, setTeamTwo] = useState<string[]>([]);
   const [crowd, setCrowd] = useState<string[]>([]);
 
+  const teams: TeamResponse = {
+    teams: [
+      { teamName: "Team One", players: teamOne, discordChannel: "Strömstad" },
+      { teamName: "Crowd", players: crowd },
+      { teamName: "Team Two", players: teamTwo, discordChannel: "Tanumshede" },
+    ]
+  };
+
   function divideArray(array: string[]) {
     const one = array.slice(0, SIZE);
     const two = array.slice(SIZE, SIZE + SIZE);
@@ -64,11 +72,17 @@ export default function Home() {
     <main>
       <div className="player-form-wrapper">
         <div className="players-container">
-          <TeamContainer players={teamOne} title="team one" />
-          <TeamContainer players={teamTwo} title="team two" />
+          {teams.teams[0].players.length > 0 && teams.teams.map((team) => (
+            <TeamContainer players={team.players} title={team.teamName} discordChannel={team.discordChannel} key={team.teamName} />
 
-          <TeamContainer players={crowd} title="Crowd" />
+          ))
+          }
         </div>
+        {/* <div className="players-container">
+          <TeamContainer players={teamOne} title="team one" />
+          <TeamContainer players={crowd} title="Crowd" />
+          <TeamContainer players={teamTwo} title="team two" />
+        </div> */}
         <div className="button-container">
           <Button onClick={generate} text="Generate" />
           <Button onClick={copy} text="Copy" />
