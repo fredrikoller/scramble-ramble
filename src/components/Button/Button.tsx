@@ -4,13 +4,14 @@ import './Button.css';
 interface ButtonProps {
   text: string;
   link?: string;
+  classes: string;
   onClick?: () => void;
 }
 
 export const Button = (props: ButtonProps) => {
   return (
     <button
-      className="button"
+      className={props.classes}
       onClick={props.onClick}
     >
       {props.link !== undefined

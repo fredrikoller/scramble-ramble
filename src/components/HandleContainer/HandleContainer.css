@@ -4,5 +4,5 @@ p::first-letter {
 }
 
 .name-wrapper {
-
+  background-color: var(--dark-red);
 }

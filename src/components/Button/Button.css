@@ -3,7 +3,7 @@
   background: var(--yellow);
   color: var(--dark-red);
   width: auto;
-  width: 150px;
+  width: 160px;
   height: 50px;
   font-size: 24px;
   font-weight: 600;
@@ -12,6 +12,11 @@
   border-style: none;
   border-radius: 2px;
   padding: 5px;
+}
+
+.button-auth {
+  font-family: 'Melted Monster';
+  color: var(--dark-red);
 }
 
 .button:hover {

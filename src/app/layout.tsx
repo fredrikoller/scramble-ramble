@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Scramble-o-rama",
-  description: "Scramble your team and face off on the battlefields",
+  description: "Scramble your team and face off on the battlefields"
 };
 
 export default function RootLayout({
@@ -14,6 +14,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="./assets/favicon.svg"/>
+      </head>
       <body>
         <Header />
         {children}
