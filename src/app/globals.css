@@ -3,13 +3,13 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: 'Melted Monster';
-  src: url('./fonts/MeltedMonster.ttf') ;
+  font-family: "Melted Monster";
+  src: url("./fonts/MeltedMonster.ttf");
 }
 
 @font-face {
-  font-family: 'Maiden';
-  src: url('./fonts/maiden.ttf')
+  font-family: "Maiden";
+  src: url("./fonts/maiden.ttf");
 }
 
 :root {
@@ -17,16 +17,17 @@
   --background-start-rgb: rgb(214, 219, 220);
   --background-end-rgb: rgb(255, 255, 255);
   --header-background-rgb: rgb(30, 46, 71);
+  --black: rgb(0, 0, 0);
   --dark-red: #100406;
   --wine-red: #391018;
-  --orange: #E24B16;
-  --yellow: #F9B642;
+  --orange: #e24b16;
+  --yellow: #f9b642;
   --blue: #082739;
 }
 
 body {
-  background-color: var(--dark-red);
-  color: var(--orange);
+  background-color: var(--black);
+  color: white;
 }
 
 a {
@@ -62,4 +63,27 @@ main {
   flex-direction: row;
   justify-content: space-between;
   height: 7rem;
+}
+
+/* Button */
+
+.button {
+  /* font-family: 'Melted Monster'; */
+  background: var(--yellow);
+  color: var(--dark-red);
+  width: auto;
+  width: 160px;
+  height: 50px;
+  font-size: 24px;
+  font-weight: 600;
+  font-style: italic;
+  margin: 5px;
+  border-style: none;
+  border-radius: 2px;
+  padding: 5px;
+}
+
+.button-auth {
+  font-family: "Melted Monster";
+  color: var(--dark-red);
 }

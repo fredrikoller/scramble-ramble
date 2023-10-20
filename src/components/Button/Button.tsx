@@ -5,7 +5,7 @@ interface ButtonProps {
   text: string;
   link?: string;
   classes: string;
-  onClick?: () => void;
+  onClick?: (input: any) => void;
 }
 
 export const Button = (props: ButtonProps) => {
